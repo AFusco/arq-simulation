@@ -1,0 +1,19 @@
+universe = vanilla
+Executable = scripts/simulate.sh
+Log  = simulation.log
+Output = runs/$(Process)/int.out
+Error = runs/$(Process)/int.err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files =              \
+    bin/m2s,                        \
+    scripts/simulate.sh,            \
+    bin/dealII_base.i386,           \
+    ContextInt,                     \
+    runs/$(Process)/BranchPredictor 
+
+
+Arguments = ContextInt BranchPredictor 100000000
+Queue 42

@@ -1,0 +1,8 @@
+[ BranchPredictor ]
+    Kind = TwoLevel
+    BTB.Sets = 256
+    BTB.Assoc = 4
+    RAS.Size = 32
+    TwoLevel.L1Size = 1
+    TwoLevel.L2Size = 8192
+    TwoLevel.HistorySize = 8
