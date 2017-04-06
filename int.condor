@@ -21,6 +21,6 @@ Arguments = \
     --x86-sim detailed                  \
     --x86-max-inst 100000000            \
     --x86-config BranchPredictor        \
-    --ctx-config ContextInt             \
+    --ctx-config ContextInt             
 
 Queue 42
