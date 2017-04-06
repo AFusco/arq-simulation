@@ -1,5 +1,5 @@
 universe = vanilla
-Executable = scripts/simulate.sh
+Executable = bin/m2s
 Log  = simulation.log
 Output = runs/$(Process)/int.out
 Error = runs/$(Process)/int.err
@@ -15,5 +15,12 @@ transfer_input_files =              \
     runs/$(Process)/BranchPredictor 
 
 
-Arguments = ContextInt BranchPredictor 100000000
+transfer_output_files =  
+
+Arguments = \
+    --x86-sim detailed                  \
+    --x86-max-inst 100000000            \
+    --x86-config BranchPredictor        \
+    --ctx-config ContextInt             \
+
 Queue 42

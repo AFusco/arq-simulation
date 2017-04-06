@@ -1,5 +1,5 @@
 universe = vanilla
-Executable = scripts/simulate.sh
+Executable = bin/m2s 
 Log  = simulation.log
 Output = runs/$(Process)/fp.out
 Error = runs/$(Process)/fp.err
@@ -16,5 +16,10 @@ transfer_input_files =              \
 
 transfer_output_files =  
 
-Arguments = ContextFP BranchPredictor 100000000
+
+Arguments = \
+    --x86-sim detailed                  \
+    --x86-max-inst 100000000            \
+    --x86-config BranchPredictor        \
+    --ctx-config ContextFP              \
 Queue 42
