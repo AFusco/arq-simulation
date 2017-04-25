@@ -1,1 +1,34 @@
-./m2s: /lib64/libc.so.6: version `GLIBC_2.7' not found (required by ./m2s)
+
+; Multi2Sim 4.2 - A Simulation Framework for CPU-GPU Heterogeneous Computing
+; Please use command 'm2s --help' for a list of command-line options.
+; Simulation alpha-numeric ID: teaXx
+
+
+;
+; Simulation Statistics Summary
+;
+
+[ General ]
+RealTime = 915.84 [s]
+SimEnd = x86MaxInst
+SimTime = 386456405.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 386456406
+
+[ x86 ]
+RealTime = 915.84 [s]
+Instructions = 126191298
+InstructionsPerSecond = 137788
+Contexts = 1
+Memory = 13307904
+FastForwardInstructions = 0
+CommittedInstructions = 100000002
+CommittedInstructionsPerCycle = 0.2588
+CommittedMicroInstructions = 184102365
+CommittedMicroInstructionsPerCycle = 0.4764
+BranchPredictionAccuracy = 0.9748
+SimTime = 386456404.00 [ns]
+Frequency = 1000 [MHz]
+Cycles = 386456404
+CyclesPerSecond = 421970
+
